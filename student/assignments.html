@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Assignments - ConCorp Learning</title>
+    <link rel="stylesheet" href="../shared/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">ConCorp Learning</div>
+                <button class="mobile-nav-toggle" onclick="toggleMobileNav()">☰</button>
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                        <li><a href="courses.html">My Courses</a></li>
+                        <li><a href="assignments.html" class="active">Assignments</a></li>
+                    </ul>
+                </nav>
+                <div class="user-profile">
+                    <div class="user-avatar" id="userAvatar">S</div>
+                    <span id="userName">Student</span>
+                    <button class="btn btn-outline" onclick="AuthUtils.logout()" style="margin-left: 1rem;">Logout</button>
+                </div>
+            </div>
+            <nav class="mobile-nav" id="mobileNav">
+                <ul>
+                    <li><a href="dashboard.html">📊 Dashboard</a></li>
+                    <li><a href="courses.html">📚 My Courses</a></li>
+                    <li><a href="assignments.html" class="active">📝 Assignments</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="d-flex justify-between align-center mb-4">
+                <h1 class="text-primary">My Assignments</h1>
+                <div class="d-flex gap-2">
+                    <select id="statusFilter" class="form-select">
+                        <option value="">All Assignments</option>
+                        <option value="pending">Pending</option>
+                        <option value="in-progress">In Progress</option>
+                        <option value="submitted">Submitted</option>
+                        <option value="graded">Graded</option>
+                        <option value="overdue">Overdue</option>
+                    </select>
+                    <select id="courseFilter" class="form-select">
+                        <option value="">All Courses</option>
+                        <option value="safety">Safety Training</option>
+                        <option value="concrete">Concrete Fundamentals</option>
+                        <option value="equipment">Equipment Operation</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Assignment Statistics -->
+            <div class="stats-grid mb-4">
+                <div class="stat-card">
+                    <div class="stat-number" id="totalAssignments">15</div>
+                    <div class="stat-label">Total Assignments</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="completedAssignments">8</div>
+                    <div class="stat-label">Completed</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="pendingAssignments">5</div>
+                    <div class="stat-label">Pending</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="averageScore">87%</div>
+                    <div class="stat-label">Average Score</div>
+                </div>
+            </div>
+
+            <!-- Urgent Assignments -->
+            <div class="card mb-4" id="urgentAssignments">
+                <div class="card-header">
+                    <h2 class="card-title text-danger">⚠️ Urgent Assignments</h2>
+                </div>
+                <div id="urgentList">
+                    <!-- Urgent assignments will be loaded here -->
+                </div>
+            </div>
+
+            <!-- Assignment Tabs -->
+            <div class="card">
+                <div class="card-header">
+                    <div class="d-flex gap-2">
+                        <button class="btn btn-primary tab-btn active" data-tab="pending">Pending</button>
+                        <button class="btn btn-outline tab-btn" data-tab="in-progress">In Progress</button>
+                        <button class="btn btn-outline tab-btn" data-tab="submitted">Submitted</button>
+                        <button class="btn btn-outline tab-btn" data-tab="graded">Graded</button>
+                    </div>
+                </div>
+
+                <!-- Assignment Lists -->
+                <div id="pendingTab" class="tab-content active">
+                    <div id="pendingAssignmentsList">
+                        <!-- Pending assignments will be loaded here -->
+                    </div>
+                </div>
+
+                <div id="in-progressTab" class="tab-content hidden">
+                    <div id="inProgressAssignmentsList">
+                        <!-- In progress assignments will be loaded here -->
+                    </div>
+                </div>
+
+                <div id="submittedTab" class="tab-content hidden">
+                    <div id="submittedAssignmentsList">
+                        <!-- Submitted assignments will be loaded here -->
+                    </div>
+                </div>
+
+                <div id="gradedTab" class="tab-content hidden">
+                    <div id="gradedAssignmentsList">
+                        <!-- Graded assignments will be loaded here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Assignment Detail Modal -->
+    <div id="assignmentModal" class="modal">
+        <div class="modal-content" style="max-width: 800px;">
+            <div class="modal-header">
+                <h3 id="assignmentTitle">Assignment Details</h3>
+                <button class="modal-close" onclick="closeModal('assignmentModal')">&times;</button>
+            </div>
+            <div id="assignmentContent">
+                <!-- Assignment details will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Submit Assignment Modal -->
+    <div id="submitModal" class="modal">
+        <div class="modal-content" style="max-width: 600px;">
+            <div class="modal-header">
+                <h3>Submit Assignment</h3>
+                <button class="modal-close" onclick="closeModal('submitModal')">&times;</button>
+            </div>
+            <form id="submitForm">
+                <input type="hidden" id="submitAssignmentId">
+                <div class="form-group">
+                    <label class="form-label">Assignment</label>
+                    <div id="submitAssignmentTitle" class="text-primary font-weight-bold"></div>
+                </div>
+                <div class="form-group">
+                    <label for="submissionText" class="form-label">Your Response</label>
+                    <textarea id="submissionText" class="form-textarea" rows="6" placeholder="Enter your assignment response here..." required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="submissionFiles" class="form-label">Attach Files (Optional)</label>
+                    <input type="file" id="submissionFiles" class="form-input" multiple>
+                    <small class="text-secondary">Supported formats: PDF, DOC, DOCX, JPG, PNG</small>
+                </div>
+                <div class="form-group">
+                    <label for="submissionNotes" class="form-label">Additional Notes (Optional)</label>
+                    <textarea id="submissionNotes" class="form-textarea" rows="3" placeholder="Any additional comments or notes..."></textarea>
+                </div>
+                <div class="d-flex gap-2">
+                    <button type="submit" class="btn btn-success">Submit Assignment</button>
+                    <button type="button" class="btn btn-warning" onclick="saveDraft()">Save as Draft</button>
+                    <button type="button" class="btn btn-outline" onclick="closeModal('submitModal')">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="../auth/login.js"></script>
+    <script src="assignments.js"></script>
+</body>
+</html>

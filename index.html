@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConCorp Learning Management System</title>
+    <link rel="stylesheet" href="shared/styles.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .welcome-container {
+            background-color: var(--white);
+            padding: 3rem;
+            border-radius: 12px;
+            box-shadow: var(--shadow-hover);
+            text-align: center;
+            max-width: 500px;
+        }
+
+        .company-logo {
+            font-size: 3rem;
+            font-weight: bold;
+            color: var(--primary-blue);
+            margin-bottom: 1rem;
+        }
+
+        .company-tagline {
+            color: var(--dark-gray);
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .feature-list {
+            text-align: left;
+            margin: 2rem 0;
+            color: var(--text-dark);
+        }
+
+        .feature-list li {
+            margin-bottom: 0.5rem;
+            padding-left: 1rem;
+            position: relative;
+        }
+
+        .feature-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--success);
+            font-weight: bold;
+        }
+
+        .cta-section {
+            margin-top: 2rem;
+        }
+
+        .demo-credentials {
+            background-color: var(--light-blue);
+            padding: 1rem;
+            border-radius: 6px;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="welcome-container">
+        <div class="company-logo">ConCorp Learning</div>
+        <div class="company-tagline">Professional Training Management for Concrete Industry</div>
+        
+        <ul class="feature-list">
+            <li>Comprehensive course management</li>
+            <li>Assignment tracking and submission</li>
+            <li>Progress monitoring and analytics</li>
+            <li>Grade management and reporting</li>
+            <li>Attendance tracking</li>
+            <li>Professional dashboard for administrators and students</li>
+        </ul>
+
+        <div class="cta-section">
+            <a href="auth/login.html" class="btn btn-primary" style="font-size: 1.1rem; padding: 1rem 2rem;">
+                🚀 Access Learning Platform
+            </a>
+            
+            <div class="demo-credentials">
+                <strong>Demo Credentials:</strong><br>
+                <strong>Admin:</strong> admin / admin123<br>
+                <strong>Student:</strong> student1 / pass123
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Auto-redirect to login after 10 seconds if no interaction
+        let redirectTimer = setTimeout(() => {
+            window.location.href = 'auth/login.html';
+        }, 10000);
+
+        // Cancel auto-redirect if user interacts with the page
+        document.addEventListener('click', () => {
+            clearTimeout(redirectTimer);
+        });
+
+        document.addEventListener('keydown', () => {
+            clearTimeout(redirectTimer);
+        });
+    </script>
+</body>
+</html>
