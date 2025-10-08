@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 22%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 22%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 22%;
+
+    /* DMCI Blue - primary brand color */
+    --primary: 218 99% 31%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Mid Blue - modern touch */
+    --secondary: 218 55% 50%;
+    --secondary-foreground: 0 0% 100%;
+
+    /* Silver Sand - subtle cement reference */
+    --muted: 0 0% 95%;
+    --muted-foreground: 0 0% 46%;
+
+    /* Day Sky Blue - openness & possibilities */
+    --accent: 197 73% 73%;
+    --accent-foreground: 0 0% 22%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 91%;
+    --input: 0 0% 91%;
+    --ring: 218 99% 31%;
+
+    --radius: 0.5rem;
+
+    /* Custom design tokens */
+    --charcoal: 0 0% 22%;
+    --silver: 0 0% 75%;
+    --sky-blue: 197 73% 73%;
+  }
+
+  .dark {
+    --background: 0 0% 10%;
+    --foreground: 0 0% 95%;
+
+    --card: 0 0% 15%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 0 0% 15%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 218 99% 31%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 218 55% 50%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 0 0% 20%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent: 197 73% 73%;
+    --accent-foreground: 0 0% 22%;
+
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 25%;
+    --input: 0 0% 25%;
+    --ring: 218 99% 31%;
+
+    --charcoal: 0 0% 95%;
+    --silver: 0 0% 45%;
+    --sky-blue: 197 73% 73%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}

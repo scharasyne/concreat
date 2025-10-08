@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academy - Concreat Holdings Philippines</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="../public/favicon.ico">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html" class="logo-link">
+                    <img src="../src/assets/logo.png" alt="Concreat Holdings Philippines" class="logo">
+                </a>
+
+                <div class="nav-links desktop-nav">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About Us</a>
+                    <a href="academy.html" class="nav-link active">Academy</a>
+                    <a href="programs.html" class="nav-link">Public Programs</a>
+                    <a href="newsroom.html" class="nav-link">Newsroom</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                    <svg class="menu-icon" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M3 12h18M3 6h18M3 18h18"/>
+                    </svg>
+                    <svg class="close-icon hidden" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 6L6 18M6 6l12 12"/>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="mobile-nav hidden" id="mobileNav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="academy.html" class="nav-link active">Academy</a>
+                <a href="programs.html" class="nav-link">Public Programs</a>
+                <a href="newsroom.html" class="nav-link">Newsroom</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-fullscreen">
+        <img src="../src/assets/academy-hero.jpg" alt="Concreat Academy" class="hero-image">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="container">
+                <div class="hero-text">
+                    <h1 class="hero-title">Concreat Academy</h1>
+                    <p class="hero-subtitle">
+                        Through our comprehensive academies and leadership development programs, we offer 
+                        traditional in-person training and best-in-class digital learning.
+                    </p>
+                    <a href="#academies" class="btn btn-secondary btn-lg">Explore Our Programs</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Academies Section -->
+    <section id="academies" class="section">
+        <div class="container">
+            <div class="text-center section-header">
+                <h2 class="section-title-large">Academies</h2>
+                <p class="section-subtitle-large">
+                    Through Concreat Holdings Philippines' functional academies and our portfolio of Leadership 
+                    Development Programs, we offer traditional in-person training and best-in-class digital learning.
+                </p>
+            </div>
+
+            <div class="academies-grid">
+                <div class="card academy-card border-charcoal">
+                    <div class="academy-icon-wrapper">
+                        <svg class="academy-icon text-charcoal" width="40" height="40" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 3H3v7h18V3zM21 14H3v7h18v-7zM10 3v18"/>
+                        </svg>
+                    </div>
+                    <h3 class="academy-title text-charcoal">Construction Management Academy</h3>
+                    <p class="text-muted">
+                        Prepare future operations leaders in foundational concepts behind project planning, execution, quality control, and site management.
+                    </p>
+                </div>
+
+                <div class="card academy-card border-primary">
+                    <div class="academy-icon-wrapper">
+                        <svg class="academy-icon text-primary" width="40" height="40" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2"/>
+                            <path d="M7 3v18"/>
+                            <path d="M3 7h18"/>
+                        </svg>
+                    </div>
+                    <h3 class="academy-title text-primary">Engineering Excellence Academy</h3>
+                    <p class="text-muted">
+                        Develop engineering professionals with comprehensive training in structural design, analysis, and innovative construction solutions.
+                    </p>
+                </div>
+
+                <div class="card academy-card border-blue">
+                    <div class="academy-icon-wrapper">
+                        <svg class="academy-icon text-blue" width="40" height="40" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
+                    <h3 class="academy-title text-blue">Culture and Values Academy</h3>
+                    <p class="text-muted">
+                        Through comprehensive learning, employees quickly learn about Concreat's values, ethics, diversity, brand identity, and compliance standards.
+                    </p>
+                </div>
+
+                <div class="card academy-card border-purple">
+                    <div class="academy-icon-wrapper">
+                        <svg class="academy-icon text-purple" width="40" height="40" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="3" width="20" height="14" rx="2"/>
+                            <path d="M8 21h8"/>
+                            <path d="M12 17v4"/>
+                        </svg>
+                    </div>
+                    <h3 class="academy-title text-purple">Digital Transformation Academy</h3>
+                    <p class="text-muted">
+                        Building a digital culture, equipping employees to transform operations using modern technology, data analytics, and automation tools.
+                    </p>
+                </div>
+
+                <div class="card academy-card border-orange">
+                    <div class="academy-icon-wrapper">
+                        <svg class="academy-icon text-orange" width="40" height="40" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                    </div>
+                    <h3 class="academy-title text-orange">Health and Safety Academy</h3>
+                    <p class="text-muted">
+                        Safety is our top priority. This academy fosters a zero-injury mindset and protects the well-being of all employees and stakeholders.
+                    </p>
+                </div>
+
+                <div class="card academy-card border-red">
+                    <div class="academy-icon-wrapper">
+                        <svg class="academy-icon text-red" width="40" height="40" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="23 6 13.5 15.5 8 10"/>
+                            <path d="M12 22s8-4 13-4"/>
+                        </svg>
+                    </div>
+                    <h3 class="academy-title text-red">Leadership Development Academy</h3>
+                    <p class="text-muted">
+                        Leadership programs boost future leaders' readiness, growing skills, networks, and capabilities to drive organizational excellence.
+                    </p>
+                </div>
+
+                <div class="card academy-card border-secondary">
+                    <div class="academy-icon-wrapper">
+                        <svg class="academy-icon text-secondary" width="40" height="40" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                            <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                        </svg>
+                    </div>
+                    <h3 class="academy-title text-secondary">Quality Assurance Academy</h3>
+                    <p class="text-muted">
+                        Master quality management systems, control processes, and continuous improvement methodologies for construction excellence.
+                    </p>
+                </div>
+
+                <div class="card academy-card border-accent">
+                    <div class="academy-icon-wrapper">
+                        <svg class="academy-icon text-accent" width="40" height="40" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                        </svg>
+                    </div>
+                    <h3 class="academy-title text-accent">Sustainable Building Academy</h3>
+                    <p class="text-muted">
+                        Explore eco-friendly construction methods, green building certifications, and sustainable infrastructure development practices.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section bg-muted">
+        <div class="container text-center">
+            <svg class="cta-icon" width="64" height="64" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+            </svg>
+            <h2 class="section-title">Ready to Start Learning?</h2>
+            <p class="section-subtitle">
+                Contact us to learn more about our academies and how we can help develop your team's capabilities.
+            </p>
+            <a href="contact.html" class="btn btn-primary btn-lg">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <img src="../src/assets/logo.png" alt="Concreat Holdings Philippines" class="footer-logo">
+                    <p class="footer-text">
+                        Building enduring value through education and professional development.
+                    </p>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="academy.html">Academy</a></li>
+                        <li><a href="programs.html">Public Programs</a></li>
+                        <li><a href="newsroom.html">Newsroom</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-heading">Contact</h3>
+                    <ul class="footer-contact">
+                        <li>
+                            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                            <span>+63 2 8888 3000</span>
+                        </li>
+                        <li>
+                            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                            <span>info@concreat.com.ph</span>
+                        </li>
+                        <li>
+                            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            <span>Manila, Philippines</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-heading">Newsletter</h3>
+                    <p class="footer-text">
+                        Stay updated with our latest courses and programs.
+                    </p>
+                    <a href="contact.html" class="btn btn-primary btn-sm">Subscribe</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Concreat Holdings Philippines. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
