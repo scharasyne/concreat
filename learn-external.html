@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>External Trainings</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-content">
+        <a href="index.html" class="logo-link"><img src="src/assets/logo.png" alt="Concreat Holdings Philippines" class="logo"></a>
+        <div class="nav-links desktop-nav">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About Us</a>
+          <div class="nav-dropdown-wrapper"><a href="academy.html" class="nav-link active" id="learnNav">Learn ▾</a>
+            <div class="nav-dropdown-menu" id="learnNavDropdown">
+              <a href="academy.html" class="nav-dropdown-item">Internal (Academies & Modules)</a>
+              <a href="learn-external.html" class="nav-dropdown-item">External (Trainings Offered)</a>
+            </div>
+          </div>
+          <a href="newsroom.html" class="nav-link">Updates</a>
+          <a href="contact.html" class="nav-link">Contact Us</a>
+        </div>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+          <svg class="menu-icon" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+          <svg class="close-icon hidden" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+        </button>
+      </div>
+      <div class="mobile-nav hidden" id="mobileNav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <div class="nav-dropdown-wrapper"><a href="academy.html" class="nav-link active" id="learnNavMobile">Learn ▾</a>
+          <div class="nav-dropdown-menu" id="learnNavDropdownMobile">
+            <a href="academy.html" class="nav-dropdown-item">Internal (Academies & Modules)</a>
+            <a href="learn-external.html" class="nav-dropdown-item">External (Trainings Offered)</a>
+          </div>
+        </div>
+        <a href="newsroom.html" class="nav-link">Updates</a>
+        <a href="contact.html" class="nav-link">Contact Us</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="section" style="padding-top:3rem;">
+    <div class="container" style="text-align:center;">
+      <h1 class="section-title-large">External Trainings</h1>
+      <p class="section-subtitle-large">Browse public/external training opportunities from trusted providers.</p>
+    </div>
+  </section>
+
+  <main class="section" style="padding-top:2rem;">
+    <div class="container">
+      <input type="text" class="mini-search" placeholder="Search external trainings..." />
+      <div style="overflow-x:auto; margin-top:1.5rem;">
+        <table class="external-table" style="width:100%; border-collapse:collapse;">
+          <thead>
+            <tr style="background: var(--muted);">
+              <th style="text-align:left; padding:0.8rem;">Type</th>
+              <th style="text-align:left; padding:0.8rem;">Training</th>
+              <th style="text-align:left; padding:0.8rem;">Date</th>
+              <th style="text-align:left; padding:0.8rem;">Provider</th>
+              <th style="text-align:left; padding:0.8rem;">Details</th>
+              <th style="text-align:left; padding:0.8rem;">Register</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="padding:0.75rem;">Technical</td>
+              <td style="padding:0.75rem;">Concrete Innovations Symposium</td>
+              <td style="padding:0.75rem;">Feb 10-12, 2026</td>
+              <td style="padding:0.75rem;">PH Construction Assoc.</td>
+              <td style="padding:0.75rem;">Latest techniques and case studies in concrete.</td>
+              <td style="padding:0.75rem;"><a href="#" class="btn btn-secondary btn-sm">Register</a></td>
+            </tr>
+            <tr>
+              <td style="padding:0.75rem;">Soft Skills</td>
+              <td style="padding:0.75rem;">Effective Client Communication</td>
+              <td style="padding:0.75rem;">Mar 5, 2026</td>
+              <td style="padding:0.75rem;">BizDev Institute</td>
+              <td style="padding:0.75rem;">Hybrid/On-site seminar. Certificate included.</td>
+              <td style="padding:0.75rem;"><a href="#" class="btn btn-secondary btn-sm">Register</a></td>
+            </tr>
+            <tr>
+              <td style="padding:0.75rem;">Compliance</td>
+              <td style="padding:0.75rem;">OSHA PH Safety Certification</td>
+              <td style="padding:0.75rem;">On-demand</td>
+              <td style="padding:0.75rem;">OSHA Philippines</td>
+              <td style="padding:0.75rem;">Online, self-paced. Required for supervisors.</td>
+              <td style="padding:0.75rem;"><a href="#" class="btn btn-secondary btn-sm">Register</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

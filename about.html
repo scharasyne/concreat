@@ -19,10 +19,15 @@
                 <div class="nav-links desktop-nav">
                     <a href="index.html" class="nav-link">Home</a>
                     <a href="about.html" class="nav-link active">About Us</a>
-                    <a href="academy.html" class="nav-link">Academy</a>
-                    <a href="programs.html" class="nav-link">Public Programs</a>
-                    <a href="newsroom.html" class="nav-link">Newsroom</a>
-                    <a href="contact.html" class="nav-link">Contact</a>
+                    <div class="nav-dropdown-wrapper">
+                        <a href="academy.html" class="nav-link" id="learnNav">Learn ▾</a>
+                        <div class="nav-dropdown-menu" id="learnNavDropdown">
+                            <a href="academy.html" class="nav-dropdown-item">Internal (Academies & Modules)</a>
+                            <a href="learn-external.html" class="nav-dropdown-item">External (Trainings Offered)</a>
+                        </div>
+                    </div>
+                    <a href="newsroom.html" class="nav-link">Updates</a>
+                    <a href="contact.html" class="nav-link">Contact Us</a>
                 </div>
 
                 <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
@@ -38,10 +43,15 @@
             <div class="mobile-nav hidden" id="mobileNav">
                 <a href="index.html" class="nav-link">Home</a>
                 <a href="about.html" class="nav-link active">About Us</a>
-                <a href="academy.html" class="nav-link">Academy</a>
-                <a href="programs.html" class="nav-link">Public Programs</a>
-                <a href="newsroom.html" class="nav-link">Newsroom</a>
-                <a href="contact.html" class="nav-link">Contact</a>
+                <div class="nav-dropdown-wrapper">
+                    <a href="academy.html" class="nav-link" id="learnNavMobile">Learn ▾</a>
+                    <div class="nav-dropdown-menu" id="learnNavDropdownMobile">
+                        <a href="academy.html" class="nav-dropdown-item">Internal (Academies & Modules)</a>
+                        <a href="learn-external.html" class="nav-dropdown-item">External (Trainings Offered)</a>
+                    </div>
+                </div>
+                <a href="newsroom.html" class="nav-link">Updates</a>
+                <a href="contact.html" class="nav-link">Contact Us</a>
             </div>
         </div>
     </nav>
@@ -50,9 +60,9 @@
     <section class="hero-gradient">
         <div class="container">
             <div class="hero-text-center">
-                <h1 class="hero-title">About Concreat Holdings</h1>
+                <h1 class="hero-title">About Us: Who is CHP</h1>
                 <p class="hero-subtitle">
-                    Building on a legacy of excellence and innovation in the Philippines.
+                    Get to know Concreat Holdings Philippines, Solid Cement, and Apo Cement.
                 </p>
             </div>
         </div>
@@ -62,19 +72,18 @@
     <section class="section">
         <div class="container">
             <div class="content-narrow">
-                <h2 class="section-title">Our Story</h2>
-                <div class="prose">
-                    <p class="text-muted mb-4">
-                        The name "Concreat" (pronounced "concrete") embodies the legacy and aspirations of the company's 
-                        new owners. A combination of the Consunji name and the word "create," Concreat Holdings is 
-                        committed to building enduring value that embodies the integrity, reliability and resilience 
-                        central to the family's heritage.
-                    </p>
-                    <p class="text-muted">
-                        Through our learning management platform, we extend this commitment to education and professional 
-                        development, providing courses and programs that help individuals and organizations build lasting 
-                        capabilities and achieve sustainable success.
-                    </p>
+                <h2 class="section-title">Solid Cement and Apo Cement</h2>
+                <div class="cement-info">
+                    <div class="cement-photos">
+                        <img src="src/assets/solid-cement.jpg" alt="Solid Cement" class="cement-photo">
+                        <img src="src/assets/apo-cement.jpg" alt="Apo Cement" class="cement-photo">
+                    </div>
+                    <div class="cement-descriptions">
+                        <h3>Solid Cement</h3>
+                        <p class="text-muted mb-2">Located in Antipolo, Rizal, Solid Cement is a prominent plant known for its quality products and commitment to industry standards.</p>
+                        <h3>Apo Cement</h3>
+                        <p class="text-muted">Situated in Naga City, Cebu, Apo Cement is among the largest in the country and upholds a legacy of innovation and excellence in cement production.</p>
+                    </div>
                 </div>
             </div>
         </div>

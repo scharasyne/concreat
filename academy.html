@@ -16,13 +16,31 @@
                     <img src="src/assets/logo.png" alt="Concreat Holdings Philippines" class="logo">
                 </a>
 
+                <!-- <div class="nav-links desktop-nav">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About Us</a>
+                    <div class="nav-link nav-dropdown-wrapper">
+                        <a href="academy.html" class="nav-link" id="learnNav" aria-haspopup="true" aria-expanded="false" aria-controls="learnNavDropdown">Learn ▾</a>
+                        <div class="nav-dropdown-menu" id="learnNavDropdown">
+                            <a href="academy.html?mode=internal" class="nav-dropdown-item">Internal (Academies & Modules)</a>
+                            <a href="academy.html?mode=external" class="nav-dropdown-item">External (Trainings Offered)</a>
+                        </div>
+                    </div>
+                    <a href="newsroom.html" class="nav-link">Learning Updates</a>
+                    <a href="contact.html" class="nav-link">Contact Us</a>
+                </div> -->
                 <div class="nav-links desktop-nav">
                     <a href="index.html" class="nav-link">Home</a>
                     <a href="about.html" class="nav-link">About Us</a>
-                    <a href="academy.html" class="nav-link active">Academy</a>
-                    <a href="programs.html" class="nav-link">Public Programs</a>
-                    <a href="newsroom.html" class="nav-link">Newsroom</a>
-                    <a href="contact.html" class="nav-link">Contact</a>
+                    <div class="nav-dropdown-wrapper">
+                        <a href="academy.html" class="nav-link active" id="learnNav">Learn ▾</a>
+                        <div class="nav-dropdown-menu" id="learnNavDropdown">
+                            <a href="academy.html?mode=internal" class="nav-dropdown-item">Internal (Academies & Modules)</a>
+                            <a href="learn-external.html" class="nav-dropdown-item">External (Trainings Offered)</a>
+                        </div>
+                    </div>
+                    <a href="newsroom.html" class="nav-link">Updates</a>
+                    <a href="contact.html" class="nav-link">Contact Us</a>
                 </div>
 
                 <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
@@ -38,10 +56,15 @@
             <div class="mobile-nav hidden" id="mobileNav">
                 <a href="index.html" class="nav-link">Home</a>
                 <a href="about.html" class="nav-link">About Us</a>
-                <a href="academy.html" class="nav-link active">Academy</a>
-                <a href="programs.html" class="nav-link">Public Programs</a>
-                <a href="newsroom.html" class="nav-link">Newsroom</a>
-                <a href="contact.html" class="nav-link">Contact</a>
+                <div class="nav-link nav-dropdown-wrapper">
+                    <a href="academy.html" class="nav-link active" id="learnNavMobile" aria-haspopup="true" aria-expanded="false" aria-controls="learnNavDropdownMobile">Learn ▾</a>
+                    <div class="nav-dropdown-menu" id="learnNavDropdownMobile">
+                        <a href="academy.html" class="nav-dropdown-item">Internal (Academies & Modules)</a>
+                        <a href="learn-external.html" class="nav-dropdown-item">External (Trainings Offered)</a>
+                    </div>
+                </div>
+                <a href="newsroom.html" class="nav-link">Updates</a>
+                <a href="contact.html" class="nav-link">Contact Us</a>
             </div>
         </div>
     </nav>
@@ -53,7 +76,7 @@
         <div class="hero-content">
             <div class="container">
                 <div class="hero-text">
-                    <h1 class="hero-title">Concreat Academy</h1>
+                    <h1 class="hero-title">Learn</h1>
                     <p class="hero-subtitle">
                         Through our comprehensive academies and leadership development programs, we offer 
                         traditional in-person training and best-in-class digital learning.
@@ -64,7 +87,7 @@
         </div>
     </section>
 
-    <!-- Academies Section -->
+    <!-- Academies Section (restored original design) -->
     <section id="academies" class="section">
         <div class="container">
             <div class="text-center section-header">
@@ -75,8 +98,8 @@
                 </p>
             </div>
 
-            <div class="academies-grid">
-                <div class="card academy-card border-charcoal">
+            <div class="academies-grid grid-2x2">
+                <a href="academy-ops.html" class="card academy-card border-charcoal" style="text-decoration:none; color:inherit;">
                     <div class="academy-icon-wrapper">
                         <svg class="academy-icon text-charcoal" width="40" height="40" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M21 3H3v7h18V3zM21 14H3v7h18v-7zM10 3v18"/>
@@ -86,9 +109,9 @@
                     <p class="text-muted">
                         Prepare future operations leaders in foundational concepts behind project planning, execution, quality control, and site management.
                     </p>
-                </div>
+                </a>
 
-                <div class="card academy-card border-primary">
+                <a href="academy-eng.html" class="card academy-card border-primary" style="text-decoration:none; color:inherit;">
                     <div class="academy-icon-wrapper">
                         <svg class="academy-icon text-primary" width="40" height="40" fill="none" stroke="currentColor" stroke-width="2">
                             <rect x="3" y="3" width="18" height="18" rx="2"/>
@@ -100,9 +123,9 @@
                     <p class="text-muted">
                         Develop engineering professionals with comprehensive training in structural design, analysis, and innovative construction solutions.
                     </p>
-                </div>
+                </a>
 
-                <div class="card academy-card border-blue">
+                <a href="academy-culture.html" class="card academy-card border-blue" style="text-decoration:none; color:inherit;">
                     <div class="academy-icon-wrapper">
                         <svg class="academy-icon text-blue" width="40" height="40" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
@@ -115,71 +138,20 @@
                     <p class="text-muted">
                         Through comprehensive learning, employees quickly learn about Concreat's values, ethics, diversity, brand identity, and compliance standards.
                     </p>
-                </div>
+                </a>
 
-                <div class="card academy-card border-purple">
-                    <div class="academy-icon-wrapper">
-                        <svg class="academy-icon text-purple" width="40" height="40" fill="none" stroke="currentColor" stroke-width="2">
-                            <rect x="2" y="3" width="20" height="14" rx="2"/>
-                            <path d="M8 21h8"/>
-                            <path d="M12 17v4"/>
-                        </svg>
-                    </div>
-                    <h3 class="academy-title text-purple">Digital Transformation Academy</h3>
-                    <p class="text-muted">
-                        Building a digital culture, equipping employees to transform operations using modern technology, data analytics, and automation tools.
-                    </p>
-                </div>
-
-                <div class="card academy-card border-orange">
-                    <div class="academy-icon-wrapper">
-                        <svg class="academy-icon text-orange" width="40" height="40" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                        </svg>
-                    </div>
-                    <h3 class="academy-title text-orange">Health and Safety Academy</h3>
-                    <p class="text-muted">
-                        Safety is our top priority. This academy fosters a zero-injury mindset and protects the well-being of all employees and stakeholders.
-                    </p>
-                </div>
-
-                <div class="card academy-card border-red">
-                    <div class="academy-icon-wrapper">
-                        <svg class="academy-icon text-red" width="40" height="40" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="23 6 13.5 15.5 8 10"/>
-                            <path d="M12 22s8-4 13-4"/>
-                        </svg>
-                    </div>
-                    <h3 class="academy-title text-red">Leadership Development Academy</h3>
-                    <p class="text-muted">
-                        Leadership programs boost future leaders' readiness, growing skills, networks, and capabilities to drive organizational excellence.
-                    </p>
-                </div>
-
-                <div class="card academy-card border-secondary">
+                <a href="academy-finance.html" class="card academy-card border-secondary" style="text-decoration:none; color:inherit;">
                     <div class="academy-icon-wrapper">
                         <svg class="academy-icon text-secondary" width="40" height="40" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
                             <path d="M6 12v5c3 3 9 3 12 0v-5"/>
                         </svg>
                     </div>
-                    <h3 class="academy-title text-secondary">Quality Assurance Academy</h3>
+                    <h3 class="academy-title text-secondary">Finance & Public Affairs Academy</h3>
                     <p class="text-muted">
-                        Master quality management systems, control processes, and continuous improvement methodologies for construction excellence.
+                        Promoting robust financial practices and effective public affairs in support of organizational reputation and compliance.
                     </p>
-                </div>
-
-                <div class="card academy-card border-accent">
-                    <div class="academy-icon-wrapper">
-                        <svg class="academy-icon text-accent" width="40" height="40" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
-                        </svg>
-                    </div>
-                    <h3 class="academy-title text-accent">Sustainable Building Academy</h3>
-                    <p class="text-muted">
-                        Explore eco-friendly construction methods, green building certifications, and sustainable infrastructure development practices.
-                    </p>
-                </div>
+                </a>
             </div>
         </div>
     </section>

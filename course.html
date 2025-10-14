@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-content">
+        <a href="index.html" class="logo-link"><img src="src/assets/logo.png" alt="Concreat Holdings Philippines" class="logo"></a>
+        <div class="nav-links desktop-nav">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About Us</a>
+          <div class="nav-dropdown-wrapper"><a href="academy.html" class="nav-link" id="learnNav">Learn ▾</a>
+            <div class="nav-dropdown-menu" id="learnNavDropdown">
+              <a href="academy.html?mode=internal" class="nav-dropdown-item">Internal (Academies & Modules)</a>
+              <a href="academy.html?mode=external" class="nav-dropdown-item">External (Trainings Offered)</a>
+            </div>
+          </div>
+          <a href="newsroom.html" class="nav-link">Learning Updates</a>
+          <a href="contact.html" class="nav-link">Contact Us</a>
+        </div>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+          <svg class="menu-icon" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+          <svg class="close-icon hidden" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+        </button>
+      </div>
+      <div class="mobile-nav hidden" id="mobileNav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <div class="nav-dropdown-wrapper"><a href="academy.html" class="nav-link" id="learnNavMobile">Learn ▾</a>
+          <div class="nav-dropdown-menu" id="learnNavDropdownMobile">
+            <a href="academy.html?mode=internal" class="nav-dropdown-item">Internal (Academies & Modules)</a>
+            <a href="academy.html?mode=external" class="nav-dropdown-item">External (Trainings Offered)</a>
+          </div>
+        </div>
+        <a href="newsroom.html" class="nav-link">Learning Updates</a>
+        <a href="contact.html" class="nav-link">Contact Us</a>
+      </div>
+    </div>
+  </nav>
+  <section class="section" style="text-align:center;">
+    <div class="container">
+      <h1 class="section-title" id="courseTitle">Course</h1>
+      <img id="courseImage" class="course3x3-img" style="width:180px;height:180px;margin:1rem auto 0.5rem auto;display:block;" src="https://placehold.co/180x180/236ad7/fff?text=COURSE" alt="Course">
+      <p id="courseDesc" class="section-subtitle" style="margin-top:0.5rem;">This is a placeholder description for the selected course. Details will be added here.</p>
+      <div style="margin-top:1.5rem;">
+        <a href="javascript:history.back();" class="btn btn-secondary">Back</a>
+      </div>
+    </div>
+  </section>
+  <script src="js/main.js"></script>
+  <script>
+    (function(){
+      var params = new URLSearchParams(window.location.search);
+      var code = params.get('code') || 'COURSE';
+      document.getElementById('courseTitle').textContent = code + ' — Course';
+      document.getElementById('courseImage').src = 'https://placehold.co/180x180/002047/fff?text=' + encodeURIComponent(code);
+      document.getElementById('courseImage').alt = code;
+      document.getElementById('courseDesc').textContent = 'You are viewing details for ' + code + '. More information will be provided in this section.';
+    })();
+  </script>
+</body>
+</html>
