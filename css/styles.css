@@ -1243,3 +1243,243 @@ img {
   background: var(--secondary);
   color: white;
 }
+
+/* News Article Styles */
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+/* Hero Section for Newsroom */
+.hero-fullscreen {
+  position: relative;
+  height: 60vh;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3));
+  z-index: 2;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  color: white;
+}
+
+.hero-text {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  opacity: 0.9;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.news-card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+
+.news-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.news-card.featured {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+}
+
+.news-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius);
+}
+
+.news-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s;
+  border-radius: var(--radius);
+}
+
+.news-card:hover .news-img {
+  transform: scale(1.05);
+}
+
+.news-card.featured .news-img {
+  height: 400px;
+}
+
+.news-content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.news-meta {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+  color: var(--muted-foreground);
+}
+
+.news-date {
+  font-weight: 500;
+}
+
+.news-category {
+  background: var(--primary);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.news-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--foreground);
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+.news-card.featured .news-title {
+  font-size: 1.5rem;
+}
+
+.news-excerpt {
+  color: var(--muted-foreground);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.news-details {
+  background: var(--muted);
+  padding: 1rem;
+  border-radius: var(--radius);
+  margin-bottom: 1.5rem;
+}
+
+.news-details p {
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.news-details p:last-child {
+  margin-bottom: 0;
+}
+
+.news-card .btn {
+  margin-top: auto;
+  align-self: flex-start;
+}
+
+.newsletter-section {
+  margin-top: 3rem;
+}
+
+.newsletter-card {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: white;
+  text-align: center;
+  padding: 3rem 2rem;
+  border-radius: var(--radius);
+}
+
+.newsletter-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.newsletter-text {
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .hero-fullscreen {
+    height: 50vh;
+    min-height: 300px;
+  }
+  
+  .hero-title {
+    font-size: 2rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+  
+  .news-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .news-card.featured {
+    grid-column: 1;
+  }
+  
+  .news-card.featured .news-img {
+    height: 200px;
+  }
+  
+  .news-content {
+    padding: 1rem;
+  }
+  
+  .newsletter-card {
+    padding: 2rem 1rem;
+  }
+}

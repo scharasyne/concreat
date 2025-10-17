@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Updates - Concreat Holdings Philippines</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="src/assets/logo.png">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html" class="logo-link">
+                    <img src="src/assets/logo.png" alt="Concreat Holdings Philippines" class="logo">
+                </a>
+
+                <!-- Desktop Navigation -->
+                <div class="nav-links desktop-nav">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About Us</a>
+                    <div class="nav-dropdown-wrapper">
+                        <a href="academy.html" class="nav-link" id="learnNav">Learn ▾</a>
+                        <div class="nav-dropdown-menu" id="learnNavDropdown">
+                            <a href="academy.html" class="nav-dropdown-item">Internal (Academies & Modules)</a>
+                            <a href="learn-external.html" class="nav-dropdown-item">External (Trainings Offered)</a>
+                        </div>
+                    </div>
+                    <a href="newsroom.html" class="nav-link active">Updates</a>
+                    <a href="contact.html" class="nav-link">Contact Us</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                    <svg class="menu-icon" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M3 12h18M3 6h18M3 18h18"/>
+                    </svg>
+                    <svg class="close-icon hidden" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 6L6 18M6 6l12 12"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div class="mobile-nav hidden" id="mobileNav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <div class="nav-dropdown-wrapper">
+                    <a href="academy.html" class="nav-link" id="learnNavMobile">Learn ▾</a>
+                    <div class="nav-dropdown-menu" id="learnNavDropdownMobile">
+                        <a href="academy.html" class="nav-dropdown-item">Internal (Academies & Modules)</a>
+                        <a href="learn-external.html" class="nav-dropdown-item">External (Trainings Offered)</a>
+                    </div>
+                </div>
+                <a href="newsroom.html" class="nav-link active">Updates</a>
+                <a href="contact.html" class="nav-link">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-fullscreen">
+        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Professional Training Seminar" class="hero-image">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="container">
+                <div class="hero-text">
+                    <h1 class="hero-title">Past Events & Updates</h1>
+                    <p class="hero-subtitle">Review our completed training programs, seminars, and educational initiatives from recent months.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Articles Section -->
+    <section class="section">
+        <div class="container">
+            <div class="news-grid">
+                <!-- Featured Article -->
+                <article class="card news-card featured">
+                    <div class="news-image">
+                        <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Advanced Construction Management Seminar" class="news-img">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-date">December 15, 2024</span>
+                            <span class="news-category">Featured</span>
+                        </div>
+                        <h2 class="news-title">Advanced Construction Management Seminar Series 2025</h2>
+                        <p class="news-excerpt">
+                            Join our comprehensive 6-month seminar series covering modern construction management techniques, 
+                            project planning, risk assessment, and sustainable building practices. This intensive program 
+                            is designed for construction professionals looking to advance their careers.
+                        </p>
+                        <div class="news-details">
+                            <p><strong>Duration:</strong> 6 months (24 sessions)</p>
+                            <p><strong>Schedule:</strong> Every Saturday, 9:00 AM - 4:00 PM</p>
+                            <p><strong>Location:</strong> Concreat Academy, Manila</p>
+                            <p><strong>Certification:</strong> Professional Construction Manager (PCM)</p>
+                            <p><strong>Status:</strong> <span style="color: var(--muted-foreground);">Completed</span></p>
+                        </div>
+                        <a href="academy.html" class="btn btn-outline">View Current Programs</a>
+                    </div>
+                </article>
+
+                <!-- Regular Articles -->
+                <article class="card news-card">
+                    <div class="news-image">
+                        <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Safety Leadership Workshop" class="news-img">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-date">December 10, 2024</span>
+                            <span class="news-category">Training</span>
+                        </div>
+                        <h3 class="news-title">Safety Leadership Workshop - January 2025</h3>
+                        <p class="news-excerpt">
+                            Learn essential safety leadership skills with our intensive 3-day workshop. 
+                            Topics include hazard identification, safety culture development, and emergency response planning.
+                        </p>
+                        <div class="news-details">
+                            <p><strong>Date:</strong> January 15-17, 2025</p>
+                            <p><strong>Cost:</strong> ₱15,000 per participant</p>
+                            <p><strong>Status:</strong> <span style="color: var(--muted-foreground);">Completed</span></p>
+                        </div>
+                        <a href="academy.html" class="btn btn-outline">View Current Programs</a>
+                    </div>
+                </article>
+
+                <article class="card news-card">
+                    <div class="news-image">
+                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Digital Construction Technologies" class="news-img">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-date">December 5, 2024</span>
+                            <span class="news-category">Seminar</span>
+                        </div>
+                        <h3 class="news-title">Digital Construction Technologies Seminar</h3>
+                        <p class="news-excerpt">
+                            Explore the latest digital tools and technologies transforming the construction industry. 
+                            From BIM to IoT sensors, learn how to integrate technology into your projects.
+                        </p>
+                        <div class="news-details">
+                            <p><strong>Date:</strong> January 25, 2025</p>
+                            <p><strong>Duration:</strong> 8 hours</p>
+                            <p><strong>Format:</strong> Hybrid (In-person & Online)</p>
+                            <p><strong>Status:</strong> <span style="color: var(--muted-foreground);">Completed</span></p>
+                        </div>
+                        <a href="academy.html" class="btn btn-outline">View Current Programs</a>
+                    </div>
+                </article>
+
+                <article class="card news-card">
+                    <div class="news-image">
+                        <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2126&q=80" alt="Quality Management Training" class="news-img">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-date">November 15, 2024</span>
+                            <span class="news-category">Training</span>
+                        </div>
+                        <h3 class="news-title">Construction Quality Management Training</h3>
+                        <p class="news-excerpt">
+                            Master quality control processes, inspection techniques, and quality assurance protocols 
+                            essential for successful construction project delivery.
+                        </p>
+                        <div class="news-details">
+                            <p><strong>Duration:</strong> 2 days</p>
+                            <p><strong>Date:</strong> February 15-16, 2025</p>
+                            <p><strong>Certification:</strong> Quality Management Professional</p>
+                            <p><strong>Status:</strong> <span style="color: var(--muted-foreground);">Completed</span></p>
+                        </div>
+                        <a href="academy.html" class="btn btn-outline">View Current Programs</a>
+                    </div>
+                </article>
+
+                <article class="card news-card">
+                    <div class="news-image">
+                        <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Sustainable Construction Workshop" class="news-img">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-date">November 20, 2024</span>
+                            <span class="news-category">Workshop</span>
+                        </div>
+                        <h3 class="news-title">Sustainable Construction Practices Workshop</h3>
+                        <p class="news-excerpt">
+                            Learn about green building techniques, sustainable materials, and environmental compliance 
+                            in construction projects. Perfect for architects, engineers, and project managers.
+                        </p>
+                        <div class="news-details">
+                            <p><strong>Date:</strong> February 8, 2025</p>
+                            <p><strong>Duration:</strong> 6 hours</p>
+                            <p><strong>CEU Credits:</strong> 6 Professional Development Hours</p>
+                            <p><strong>Status:</strong> <span style="color: var(--muted-foreground);">Completed</span></p>
+                        </div>
+                        <a href="academy.html" class="btn btn-outline">View Current Programs</a>
+                    </div>
+                </article>
+
+                <article class="card news-card">
+                    <div class="news-image">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="PMP Certification Course" class="news-img">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-date">November 28, 2024</span>
+                            <span class="news-category">Certification</span>
+                        </div>
+                        <h3 class="news-title">Project Management Professional (PMP) Prep Course</h3>
+                        <p class="news-excerpt">
+                            Prepare for the PMP certification exam with our comprehensive review course. 
+                            Includes practice exams, study materials, and expert guidance from certified instructors.
+                        </p>
+                        <div class="news-details">
+                            <p><strong>Duration:</strong> 5 weeks</p>
+                            <p><strong>Start Date:</strong> February 1, 2025</p>
+                            <p><strong>Prerequisites:</strong> 3+ years project management experience</p>
+                            <p><strong>Status:</strong> <span style="color: var(--muted-foreground);">Completed</span></p>
+                        </div>
+                        <a href="academy.html" class="btn btn-outline">View Current Programs</a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Newsletter Signup -->
+            <div class="newsletter-section">
+                <div class="card newsletter-card">
+                    <h3 class="newsletter-title">Stay Updated</h3>
+                    <p class="newsletter-text">
+                        Subscribe to our newsletter to receive the latest updates about training programs, 
+                        seminars, and educational opportunities.
+                    </p>
+                    <a href="contact.html" class="btn btn-primary">Subscribe Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <img src="src/assets/logo.png" alt="Concreat Holdings Philippines" class="footer-logo">
+                    <p class="footer-text">
+                        Building enduring value through education and professional development.
+                    </p>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="academy.html">Academy</a></li>
+                        <li><a href="programs.html">Public Programs</a></li>
+                        <li><a href="newsroom.html">Newsroom</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-heading">Contact</h3>
+                    <ul class="footer-contact">
+                        <li>
+                            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                            <span>+63 2 8888 3000</span>
+                        </li>
+                        <li>
+                            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                            <span>info@concreat.com.ph</span>
+                        </li>
+                        <li>
+                            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            <span>Manila, Philippines</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-heading">Newsletter</h3>
+                    <p class="footer-text">
+                        Stay updated with our latest courses and programs.
+                    </p>
+                    <a href="contact.html" class="btn btn-primary btn-sm">Subscribe</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Concreat Holdings Philippines. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
